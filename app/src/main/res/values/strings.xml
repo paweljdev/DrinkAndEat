@@ -5,4 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="button_water">Water</string>
+    <string name="button_meal">Meal</string>
+
+    <string name="text_alarm">Alarms</string>
+
 </resources>

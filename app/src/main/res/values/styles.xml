@@ -2,7 +2,31 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActivityStyles" parent="AppTheme">
+        <item name="android:background">#787978</item>
+    </style>
+
+    <style name="ButtonStyles" parent="AppTheme">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#EEEEEE</item>
+    </style>
+
+    <style name="HeadStyles" parent="AppTheme">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#EEEEEE</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SwitchStyles" parent="AppTheme">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
     </style>
 
 </resources>
