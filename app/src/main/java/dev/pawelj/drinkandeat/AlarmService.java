@@ -1,7 +1,10 @@
 package dev.pawelj.drinkandeat;
 
 import android.app.Service;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
 import android.widget.Toast;
 
@@ -10,19 +13,33 @@ import android.widget.Toast;
  * Serwis, który będzie powiadamiał o posiłkach i piciu wody
  */
 public class AlarmService extends Service {
+
+    private final IBinder mBinder = new AlarmServicelBinder();
+
     public AlarmService() {
     }
 
     @Override
-    public int onStartCommand(Intent intent, int flag, int startID){
+    public IBinder onBind(Intent intent) {
+        return mBinder;
 
-        Toast.makeText(this, "Serwis dziala", Toast.LENGTH_LONG).show();
-        return START_STICKY;
     }
 
     @Override
-    public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+    public int onStartCommand(Intent intent, int flags, int startId){
+        Toast.makeText(this, "AutoStart serwisu", Toast.LENGTH_LONG).show();
+        return START_STICKY;
     }
+
+
+    public class AlarmServicelBinder extends Binder {
+        AlarmService getService() {
+            return AlarmService.this;
+        }
+    }
+
+    public String wiadomosc(){
+        return "dziala !!!";
+    }
+
 }

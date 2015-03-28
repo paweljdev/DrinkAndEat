@@ -19,13 +19,11 @@
         </activity>
 
         <service
-            android:name=".AlarmService"
-            android:process=":DrinkAndEat">
+            android:name=".AlarmService">
         </service>
 
         <receiver
-            android:name="AlarmServiceReceiver"
-            android:process=":DrinkAndEat">
+            android:name="AlarmServiceReceiver">
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
                     <action android:name="android.intent.action.QUICKBOOT_POWERON"/>

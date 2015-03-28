@@ -50,4 +50,12 @@
         android:layout_toRightOf="@id/Button_Meal"
         style="@style/SwitchStyles"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST SERWISU"
+        android:id="@+id/TestServisu"
+        android:layout_below="@id/Button_Meal"
+        android:onClick="TestSerwisu" />
+
 </RelativeLayout>
