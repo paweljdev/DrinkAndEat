@@ -22,7 +22,8 @@
         android:text="@string/button_water"
         android:id="@+id/Button_Water"
         android:layout_below="@id/TextView_Alarm"
-        style="@style/ButtonStyles"/>
+        style="@style/ButtonStyles"
+        android:onClick="WaterGUI"/>
 
     <Switch
         android:layout_width="wrap_content"

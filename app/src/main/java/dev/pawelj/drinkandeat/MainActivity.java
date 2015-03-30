@@ -100,4 +100,9 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void WaterGUI(View view) {
+        Intent intent = new Intent(view.getContext(), WaterActivity.class);
+        startActivityForResult(intent, 0);
+    }
 }

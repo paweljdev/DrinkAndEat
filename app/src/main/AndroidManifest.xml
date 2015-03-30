@@ -18,18 +18,20 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".AlarmService">
+        <service android:name=".AlarmService" >
         </service>
 
-        <receiver
-            android:name="AlarmServiceReceiver">
-                <intent-filter>
-                    <action android:name="android.intent.action.BOOT_COMPLETED" />
-                    <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
-                </intent-filter>
+        <receiver android:name=".AlarmServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
         </receiver>
 
+        <activity
+            android:name=".WaterActivity"
+            android:label="@string/title_activity_water" >
+        </activity>
     </application>
 
 </manifest>
