@@ -105,4 +105,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(view.getContext(), WaterActivity.class);
         startActivityForResult(intent, 0);
     }
+
+    public void MealGUI(View view) {
+        Intent intent = new Intent(view.getContext(), MealActivity.class);
+        startActivityForResult(intent, 0);
+    }
 }

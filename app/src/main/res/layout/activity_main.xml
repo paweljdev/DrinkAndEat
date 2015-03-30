@@ -40,7 +40,8 @@
         android:text="@string/button_meal"
         android:id="@+id/Button_Meal"
         android:layout_below="@id/Button_Water"
-        style="@style/ButtonStyles"/>
+        style="@style/ButtonStyles"
+        android:onClick="MealGUI"/>
 
     <Switch
         android:layout_width="wrap_content"

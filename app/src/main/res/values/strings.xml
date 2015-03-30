@@ -8,5 +8,6 @@
     <string name="button_meal">Meal</string>
     <string name="text_alarm">Alarms</string>
     <string name="title_activity_water">WaterActivity</string>
+    <string name="title_activity_meal">MealActivity</string>
 
 </resources>
