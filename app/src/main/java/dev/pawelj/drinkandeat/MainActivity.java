@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
     }
 
 
-    //TEST POPLACZENA Z SERWISEM
+    //TODO - DELETE - TEST POPLACZENA Z SERWISEM
     public void TestSerwisu(View view){
         // Toast.makeText(this,"przycisk dziala", Toast.LENGTH_LONG).show();
 
@@ -62,10 +62,7 @@ public class MainActivity extends Activity {
             Button zmianaNazwy = (Button)findViewById(R.id.TestServisu);
             zmianaNazwy.setText(wiadomosc);
         }
-
-
     }
-
     private ServiceConnection mConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
@@ -78,7 +75,7 @@ public class MainActivity extends Activity {
             mAlarmServiceBound = false;
         }
     };
-    //KONIEC TESTU
+    //END_TODO - DELETE - TEST POPLACZENA Z SERWISEM
 
 
 

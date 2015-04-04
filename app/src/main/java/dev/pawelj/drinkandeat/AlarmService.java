@@ -27,7 +27,9 @@ public class AlarmService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId){
+        //TODO - DELETE - TEST SERWISU
         Toast.makeText(this, "AutoStart serwisu", Toast.LENGTH_LONG).show();
+        //END_TODO - DELETE - TEST SERWISU
         return START_STICKY;
     }
 
@@ -38,8 +40,9 @@ public class AlarmService extends Service {
         }
     }
 
+    //TODO - DELETE - TEST POPLACZENA Z SERWISEM
     public String wiadomosc(){
         return "dziala !!!";
     }
-
+    //END_TODO - DELETE - TEST POPLACZENA Z SERWISEM
 }
